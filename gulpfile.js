@@ -28,7 +28,7 @@ gulp.task('compass', function() {
     .pipe(compass({
       project: path.join(__dirname, 'src'),
       sass: 'sass',
-      css: 'build/css'
+      css: path.join(__dirname, 'build', 'css')
     }))
     .pipe(gulp.dest('./build/css'));
 });
@@ -42,6 +42,15 @@ gulp.task("js", function () {
     .pipe(amdOptimize("app"))
     .pipe(gulp.dest("./build/js"));
 
+});
+
+var connect = require('gulp-connect');
+
+gulp.task('connect', function() {
+  connect.server({
+    root: 'build',
+    livereload: true
+  });
 });
 
 
