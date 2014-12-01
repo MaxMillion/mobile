@@ -58,6 +58,8 @@ gulp.task('copy', function() {
          .pipe(gulp.dest('./build/'))
 });
 
+var watcher = gulp.watch('src/**', ['default']);
+
 gulp.task('default', ['compass', 'html', 'templates', 'js'], function() {
   // place code for your default task here
 });
