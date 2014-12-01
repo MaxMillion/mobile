@@ -53,6 +53,10 @@ gulp.task('connect', function() {
   });
 });
 
+gulp.task('copy', function() {
+    gulp.src('./src/static/**')
+         .pipe(gulp.dest('./build/'))
+});
 
 gulp.task('default', ['compass', 'html', 'templates', 'js'], function() {
   // place code for your default task here
