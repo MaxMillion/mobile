@@ -5,7 +5,7 @@ var jade = require('gulp-jade');
 
 gulp.task('html', function() {
 
-  gulp.src('./src/html/*.jade')
+  gulp.src('./src/html/**/*.jade')
     .pipe(jade({
     }))
     .pipe(gulp.dest('./build/'))
@@ -60,6 +60,6 @@ gulp.task('copy', function() {
 
 var watcher = gulp.watch('src/**', ['default']);
 
-gulp.task('default', ['compass', 'html', 'templates', 'js'], function() {
+gulp.task('default', ['compass', 'html', 'templates', 'js', 'copy'], function() {
   // place code for your default task here
 });

@@ -1,10 +1,14 @@
+include assets/news1
+
 
 html
     head
         title Medialeaks
-
+        link(type='text/css', rel='stylesheet', href='/css/all.css')
     body
         .content-wrapper
-               .content
-                   .content
-                       h1 CONTENT
+            .content
+                .header
+                    a.logo(href="/")
+                .main
+                    //+news1
