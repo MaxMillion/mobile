@@ -1,0 +1,33 @@
+
+.article {
+
+}
+
+.article-title {
+  color: #333333;
+  clear: both;
+  font-size: 2em;
+//  line-height: 34px;
+  margin: -5px 0 5px 0;
+  letter-spacing: -1px;
+  font-weight: 600;
+  font-family: 'Ubuntu',sans-serif;
+}
+
+.article-lead {
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.article-body {
+  p {
+    margin-bottom: 22px;
+  }
+}
+
+.article-quote {
+  margin-bottom: 12px;
+  padding-left: 50px;
+}
+

@@ -1,0 +1,21 @@
+
+
+.footer {
+  padding-top: 20px;
+}
+
+.footer-item {
+  border-top: 3px solid #dadde0;
+
+  a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 2em;
+    padding-left: 80px;
+
+    &:hover {
+      color: #ea8700;
+    }
+  }
+}
