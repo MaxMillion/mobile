@@ -1,13 +1,7 @@
+extends layout
 include assets/news1
-include footer
-html
-    head
-        title Medialeaks
-        link(type='text/css', rel='stylesheet', href='/css/all.css')
-    body
-        .content
-            .header
-                a.logo(href="/")
-            .main
-                +news1
-            +footer()
+
+
+block content
+    +news1
+                     
