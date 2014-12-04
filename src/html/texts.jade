@@ -2,20 +2,27 @@
 extends layout
 
 mixin text(title, imgSrc)
-   .text
-      .text-title= title
-      .text-image
-            img(src= imgSrc)
+   a.text(
+      href='/text.html'
+   )
+      .text-title(
+         style="background-image: url(#{imgSrc})"
+      )= title
+
+
 
 block content
   .texts
      +text("Чем обернулось для России послание Путина в 2013 году", "http://medialeaks.ru/wp-content/uploads/2014/12/41d4aa605dd4b4afe6d6-601x360.jpeg")
-     +text("Дефолт 98-ого и кризис 2014. Что между ними общего?", "http://medialeaks.ru/wp-content/uploads/2014/12/41d4aa605dd4b4afe6d6-601x360.jpeg")
-     +text("Как погибал «Южный поток». История провалившейся стройки", "http://medialeaks.ru/wp-content/uploads/2014/12/41d4aa605dd4b4afe6d6-601x360.jpeg")
-     +text("Яблоко раздора. Как iPhone стал врагом русских", "http://medialeaks.ru/wp-content/uploads/2014/12/41d4aa605dd4b4afe6d6-601x360.jpeg")
-     +text("Ничего особенного. Как чиновники заговаривали курс рубля", "http://medialeaks.ru/wp-content/uploads/2014/12/41d4aa605dd4b4afe6d6-601x360.jpeg")
-     +text("Morgan Stanley прогнозирует падение ВВП России на 1,7% в 2015 году", "http://medialeaks.ru/wp-content/uploads/2014/12/41d4aa605dd4b4afe6d6-601x360.jpeg")
-     +text("Проплаченные геи и активисты. Как очерняли митинг врачей в Москве", "http://medialeaks.ru/wp-content/uploads/2014/12/41d4aa605dd4b4afe6d6-601x360.jpeg")
-     +text("Установка на зомбоящик. Чудотворцы Кашпировский и Чумак опять на ТВ", "http://medialeaks.ru/wp-content/uploads/2014/12/41d4aa605dd4b4afe6d6-601x360.jpeg")
-     +text("Установка на зомбоящик. Чудотворцы Кашпировский и Чумак опять на ТВ", "http://medialeaks.ru/wp-content/uploads/2014/12/41d4aa605dd4b4afe6d6-601x360.jpeg")
+     +text("Дефолт 98-ого и кризис 2014. Что между ними общего?", "http://medialeaks.ru/wp-content/uploads/2014/12/defau.jpg")
+     +text("Как погибал «Южный поток». История провалившейся стройки", "http://medialeaks.ru/wp-content/uploads/2014/12/image002-2-600x419.jpg")
+     +text("Яблоко раздора. Как iPhone стал врагом русских", "http://medialeaks.ru/wp-content/uploads/2014/12/yabloko-600x419.jpg")
+     +text("Ничего особенного. Как чиновники заговаривали курс рубля", "http://medialeaks.ru/wp-content/uploads/2014/12/dol-600x419.jpg")
+     +text("Morgan Stanley прогнозирует падение ВВП России на 1,7% в 2015 году", "http://medialeaks.ru/wp-content/uploads/2014/12/ms-600x419.jpg")
+     +text("Проплаченные геи и активисты. Как очерняли митинг врачей в Москве", "http://medialeaks.ru/wp-content/uploads/2014/12/nWyUVXLpJ6I-600x419.jpg")
+     +text("Установка на зомбоящик. Чудотворцы Кашпировский и Чумак опять на ТВ", "http://medialeaks.ru/wp-content/uploads/2014/11/Snimok-e%60krana-2014-11-26-v-19.29.57.png")
+     +text("За это их и любим. Запад и РФ смакуют видео застывшего Ту-134 в Игарке", "http://medialeaks.ru/wp-content/uploads/2014/11/bee-600x419.jpg")
+     +text("Беспорядки в Фергюсоне раскололи США на расы и сплотили знаменитостей", "http://medialeaks.ru/wp-content/uploads/2014/11/Snimok-e%60krana-2014-11-25-v-9.45.15-600x407.png")
+     +text("Друзья и враги Леси Рябцевой. Как ненависть коллег помогает журналисту «Эха Москвы»", "http://medialeaks.ru/wp-content/uploads/2014/11/Snimok-e%60krana-2014-11-24-v-19.48.26-600x419.png")
+     +text("Спасти Мэтта Тейлора. Как за ученого вступились мужчины и женщины по всему миру", "http://medialeaks.ru/wp-content/uploads/2014/11/QcBLgXcSplY-600x419.jpg")
 

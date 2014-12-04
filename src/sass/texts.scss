@@ -1,12 +1,26 @@
 .text {
-  margin-bottom: 22px;
+  margin-bottom: 50px;
+  overflow: visible;
+  padding-bottom: 30px;
+  display: block;
+  text-decoration: none;
 }
 
 .text-title {
   color: rgb(119,119,119);
   font-size: 1.8em;
+  background-repeat: no-repeat;
+  padding-left: 50%;
+  background-size: 400px 0.6 * 400px;
+  background-position: 0 30px;
+  display: block;
+  cursor: pointer;
 }
 
 .text-image {
   text-align: center;
+
+  img {
+    width: 50%;
+  }
 }
