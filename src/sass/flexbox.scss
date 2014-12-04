@@ -1,0 +1,82 @@
+
+
+/* 
+there exists such set of mixins on compass lib,
+but, sadly, it tend to support a wider range of browsers,
+so I'm not sure we can new 100% of features that chrome provides us with
+
+TODO: find a way to leave with compass nevertheless
+*/
+
+@mixin fx-box {
+    //This defines a flex container; inline or block depending on the given value. Thus, it enables a flex context for all its direct children.
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin fx-direction($direction: row) {
+    //This establishes the main-axis, thus defining the direction flex items are placed in the flex container.
+    //row| column| row-revers| column-reverse
+    -webkit-flex-direction: $direction;
+}
+
+@mixin fx-wrap($wrap: nowrap) {
+    //This defines whether the flex container is single-line or multi-line, and the direction of the cross-axis, which determines the direction new lines are stacked in.
+    //nowrap| wrap| wrap-reverse
+    -webkit-flex-wrap: $wrap;
+}
+
+@mixin fx-flow($direction: row, $wrap: nowrap) {
+    //a shorthand `flex-direction` and `flex-wrap` properties, which together define the flex container's main and cross axes. Default is `row nowrap`;
+    -webkit-flex-flow: $direction $wrap;
+}
+
+
+@mixin fx-align-items($alignment: stretch) {
+    // defines the default behaviour for how flex items are laid out along the cross axis on the current line. 
+    // flex-start | flex-end | center | baseline | stretch
+    -webkit-align-items: $alignment;
+}
+
+@mixin fx-justify-content($justify: flex-start) {
+    //defines the alignment along the main axis. It helps distribute extra free space leftover 
+    // flex-start | flex-end | center | space-between | space-around
+    -webkit-justify-content: $justify;
+}
+
+@mixin fx-align-content($alignment: stretch) {
+    //aligns a flex container's lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
+    //flex-start | flex-end | center | space-between | space-around | stretch
+    -webkit-align-content: $alignment;
+}
+
+@mixin fx-order($order) {
+    // order property controls the order in which they appear in their container. (by default in source order)
+    -webkit-order: $order;
+}
+
+@mixin fx-shrink($number: 1) {
+    //This defines the ability for a flex item to shrink if necessary.
+    -webkit-flex-shrink: $number;
+}
+
+@mixin fx-grow($number: 0) {
+    //defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. 
+    -webkit-flex-grow: $number;
+}
+
+@mixin fx-basis($length: auto) {
+    //This defines the default size of an element before the remaining space is distributed.
+    -webkit-flex-basis: $length;
+}
+
+@mixin flex($grow: 0, $shrink: 1, $basis: auto) {
+    //This is the shorthand for flex-grow, flex-shrink and flex-basis.
+    -webkit-flex: $grow $shrink $basis;
+}
+
+@mixin fx-align-self($alignment: auto) {
+    // allows the default alignment or the one specified by align-items to be overridden for individual flex items.
+    //auto | flex-start | flex-end | center | baseline | stretch
+    -webkit-align-self: $alignment;
+}
