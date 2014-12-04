@@ -3,7 +3,7 @@
 @import "articles";
 @import "texts";
 @import "header";
-@import "footer";
+  @import "footer";
   @import "news";
 
 
@@ -20,11 +20,13 @@ body {
 .content {
   width: 100%;
   min-width: 340px;
+//  background-color: magenta;
 }
 
 
 .main {
   background-color: white;
+//  background-color: yellow;
   padding: 5px;
 
   padding-left: 5%;
