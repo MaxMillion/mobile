@@ -2,9 +2,10 @@
 @import "compass/reset";
 
 @import "articles";
-@import "texts";
-@import "footer";
-@import "news";
+  @import "texts";
+  @import "footer";
+  @import "news";
+
 
 body {
   font-family: "Open Sans",sans-serif;
@@ -62,3 +63,6 @@ body {
   padding-right: 5%;
 }
 
+.btn-lg {
+  font-size: 1.8em;
+}

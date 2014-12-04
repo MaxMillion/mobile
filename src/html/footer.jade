@@ -1,12 +1,17 @@
+
+
+mixin footer-item(title, href, items)
+   .footer-item
+      .footer-big-link
+         a(href= href)= title
+      .footer-links
+         each item in items
+            .footer-link= item
+
+
 mixin footer
   .footer
-     .footer-item
-        a(href="allnews.html") Новости
-     .footer-item
-        a(href="texts.html") Тексты
-     .footer-item
-        a(href="persons.html") Персонажи
-     .footer-item
-        a(href="interviews.html") Интервью
-     .footer-item
-        a(href="redactor.html") Колонки
+      +footer-item("Тексты", "texts.html", ["Чем обернулось для России послание Путина в 2013 году", "Как погибал «Южный поток». История провалившейся стройки", "Яблоко раздора. Как iPhone стал врагом русских"])
+      +footer-item("Интервью", "interviews.html", ["«Оружие есть почти у всех»", "Майданом по бизнесу «регионалов» Украины", "«Мир идет дальше, а мы все палками машем»"])
+      +footer-item("Колонки", "redactor.html", ["Развалинами турбизнеса удовлетворен", "Беспокойная домохозяйка о продуктовой истерике. Прощай хамон, да здравствуют зразы", "Est chem gorditsya. Почему мы неуязвимы для санкций Запада"])
+      +footer-item("Персонажи", "persons.html", ["Борис Гребенщиков. Соль становится яд", "Валерия Новодворская. Важно дойти до конца", "Борис Березовский. Я буду в России уже весной"])
