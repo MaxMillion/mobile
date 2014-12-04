@@ -4,7 +4,7 @@ mixin news-link(time, title)
       span.news-time= time
       span.news-title= title
 
-mixin mininews
+mixin news-block(extended)
    .news-block
       +news-link('19:04', 'Компания Тимченко отказалась строить Керченский мост')
       +news-link('17:59', 'В Госдуму внесли законопроект о введении понятия «страна-агрессор»')
@@ -14,3 +14,13 @@ mixin mininews
       +news-link('14:29', 'В Госдуме опровергли запрет на работу не по специальности')
       +news-link('14:22', 'Постпредство РФ в НАТО в твиттере показало Западу украинских фашистов')
       +news-link('11:55', 'Вячеслав Володин: Россия многие годы будет жить в эпохе Путина')
+      if extended
+         button.btn.btn-block.btn-lg.btn-default(type="button") Ещё
+      else
+         a.btn.btn-lg.btn-block.btn-default(
+            href='allnews.html'
+            role='button'
+         )  Ещё
+
+
+
