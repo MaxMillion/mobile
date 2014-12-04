@@ -4,10 +4,16 @@
 @import "articles";
 @import "texts";
 @import "footer";
+@import "news";
 
 body {
   font-family: "Open Sans",sans-serif;
   font-size: 32px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .content {
