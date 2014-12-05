@@ -1,0 +1,43 @@
+/* 
+there exists such set of mixins on compass lib,
+but, sadly, it tend to support a wider range of browsers,
+so I'm not sure we can new 100% of features that chrome provides us with
+
+TODO: find a way to leave with compass nevertheless
+*/
+.footer {
+  padding-top: 36px;
+}
+
+.footer-item {
+  border-top: 3px solid #dadde0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: -webkit-flex;
+  display: flex;
+}
+.footer-item:first-child {
+  border-top: none;
+}
+.footer-item a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  padding-left: 40px;
+}
+.footer-item a:hover {
+  color: #ea8700;
+}
+.footer-item .footer-big-link {
+  width: 60%;
+  min-width: 400px;
+  padding-top: 20px;
+}
+.footer-item .footer-links {
+  text-align: right;
+}
+
+.footer-link {
+  padding-bottom: 10px;
+}

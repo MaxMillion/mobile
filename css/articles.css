@@ -1,0 +1,39 @@
+.article-title {
+  color: #333333;
+  clear: both;
+  font-size: 2em;
+  margin: -5px 0 5px 0;
+  letter-spacing: -1px;
+  font-weight: 600;
+  font-family: 'Ubuntu',sans-serif;
+}
+
+.article-lead {
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.article-body p {
+  margin-bottom: 22px;
+}
+
+.article-quote {
+  margin-bottom: 16px;
+  padding-left: 80px;
+  background-image: url("/i/Blockquotes.png");
+  background-repeat: no-repeat;
+  background-position: 30px 0px;
+  border-left: 4px solid #dadde0;
+}
+
+.article-date {
+  color: #333;
+  font-size: 0.9em;
+}
+
+.article-image {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 12px;
+}
