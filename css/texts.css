@@ -1,0 +1,26 @@
+.text {
+  margin-bottom: 50px;
+  overflow: visible;
+  padding-bottom: 30px;
+  display: block;
+  text-decoration: none;
+  height: 300px;
+}
+
+.text-title {
+  color: #777777;
+  font-size: 1.2em;
+  background-repeat: no-repeat;
+  padding-left: 50%;
+  background-size: 400px 240px;
+  background-position: 0 30px;
+  display: block;
+  cursor: pointer;
+}
+
+.text-image {
+  text-align: center;
+}
+.text-image img {
+  width: 50%;
+}
