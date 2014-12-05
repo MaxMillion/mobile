@@ -2,7 +2,7 @@
   background-attachment: scroll;
   background-clip: border-box;
   background-color: transparent;
-  background-image: url("i/header.jpg");
+  background-image: url("../i/header.jpg");
   background-origin: padding-box;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@
 .header-logo {
   width: 422.75px;
   height: 95px;
-  background: url("i/logo2.jpg") no-repeat;
+  background: url("../i/logo2.jpg") no-repeat;
   margin-left: 5%;
   display: block;
   text-decoration: none;
