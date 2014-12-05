@@ -77,7 +77,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .article-quote {
   margin-bottom: 16px;
   padding-left: 80px;
-  background-image: url("/i/Blockquotes.png");
+  background-image: url("i/Blockquotes.png");
   background-repeat: no-repeat;
   background-position: 30px 0px;
   border-left: 4px solid #dadde0;
@@ -124,7 +124,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-attachment: scroll;
   background-clip: border-box;
   background-color: transparent;
-  background-image: url("/i/header.jpg");
+  background-image: url("i/header.jpg");
   background-origin: padding-box;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -145,7 +145,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .header-logo {
   width: 422.75px;
   height: 95px;
-  background: url("/i/logo2.jpg") no-repeat;
+  background: url("i/logo2.jpg") no-repeat;
   margin-left: 5%;
   display: block;
   text-decoration: none;
