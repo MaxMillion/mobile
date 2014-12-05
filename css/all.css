@@ -1,0 +1,250 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.article-title {
+  color: #333333;
+  clear: both;
+  font-size: 2em;
+  margin: -5px 0 5px 0;
+  letter-spacing: -1px;
+  font-weight: 600;
+  font-family: 'Ubuntu',sans-serif;
+}
+
+.article-lead {
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.article-body p {
+  margin-bottom: 22px;
+}
+
+.article-quote {
+  margin-bottom: 16px;
+  padding-left: 80px;
+  background-image: url("../i/Blockquotes.png");
+  background-repeat: no-repeat;
+  background-position: 30px 0px;
+  border-left: 4px solid #dadde0;
+}
+
+.article-date {
+  color: #333;
+  font-size: 0.9em;
+}
+
+.article-image {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.text {
+  margin-bottom: 50px;
+  overflow: visible;
+  padding-bottom: 30px;
+  display: block;
+  text-decoration: none;
+}
+
+.text-title {
+  color: #777777;
+  font-size: 1.8em;
+  background-repeat: no-repeat;
+  padding-left: 50%;
+  background-size: 400px 240px;
+  background-position: 0 30px;
+  display: block;
+  cursor: pointer;
+}
+
+.text-image {
+  text-align: center;
+}
+.text-image img {
+  width: 50%;
+}
+
+.header {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: transparent;
+  background-image: url("../i/header.jpg");
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  color: #333;
+  font-size: 14px;
+  outline-color: #333;
+  outline-style: none;
+  outline-width: 0px;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  z-index: 10;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.header-logo {
+  width: 422.75px;
+  height: 95px;
+  background: url("../i/logo2.jpg") no-repeat;
+  margin-left: 5%;
+  display: block;
+  text-decoration: none;
+  background-size: 422.75px 95px;
+}
+
+.header-dropdown {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.header-dropdown .btn {
+  font-size: 2em;
+}
+.header-dropdown .dropdown-menu {
+  left: -300%;
+  font-size: 2em;
+}
+
+/* 
+there exists such set of mixins on compass lib,
+but, sadly, it tend to support a wider range of browsers,
+so I'm not sure we can new 100% of features that chrome provides us with
+
+TODO: find a way to leave with compass nevertheless
+*/
+.footer {
+  padding-top: 36px;
+}
+
+.footer-item {
+  border-top: 3px solid #dadde0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: -webkit-flex;
+  display: flex;
+}
+.footer-item:first-child {
+  border-top: none;
+}
+.footer-item a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  padding-left: 40px;
+}
+.footer-item a:hover {
+  color: #ea8700;
+}
+.footer-item .footer-big-link {
+  width: 60%;
+  min-width: 400px;
+  padding-top: 20px;
+}
+.footer-item .footer-links {
+  text-align: right;
+}
+
+.footer-link {
+  padding-bottom: 10px;
+}
+
+.news {
+  display: block;
+  font-family: Ubuntu, sans-serif;
+  padding-bottom: 24px;
+}
+
+.news-time {
+  color: #aaaaaa;
+}
+
+.news-title {
+  text-indent: 20px;
+  padding-left: 20px;
+}
+
+body {
+  font-family: "Open Sans",sans-serif;
+  font-size: 32px;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+
+.content {
+  width: 100%;
+  min-width: 340px;
+}
+
+.main {
+  background-color: white;
+  padding: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.btn-lg {
+  font-size: 1.8em;
+}
