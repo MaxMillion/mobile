@@ -7,6 +7,7 @@ TODO: find a way to leave with compass nevertheless
 */
 .footer {
   padding-top: 36px;
+  font-size: 1.2em;
 }
 
 .footer-item {
@@ -23,7 +24,6 @@ TODO: find a way to leave with compass nevertheless
   text-decoration: none;
   color: black;
   text-transform: uppercase;
-  font-size: 1.8em;
   padding-left: 40px;
 }
 .footer-item a:hover {
@@ -39,5 +39,7 @@ TODO: find a way to leave with compass nevertheless
 }
 
 .footer-link {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  font-size: 0.8em;
 }
